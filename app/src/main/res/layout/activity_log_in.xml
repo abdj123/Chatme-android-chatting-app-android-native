@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Log_in"
+    android:layout_weight="60">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/welcom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Welcome Back!"
+            android:textSize="23dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to continue"
+            android:layout_below="@id/welcom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="58dp"/>
+        <EditText
+            android:id="@+id/loginemail"
+            android:layout_below="@id/small"
+            android:layout_width="343sp"
+            android:layout_height="56sp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/backoflog"
+            android:paddingLeft="18dp"
+            />
+        <EditText
+            android:id="@+id/loginpassword"
+            android:layout_width="343sp"
+            android:layout_height="56sp"
+            android:layout_below="@id/loginemail"
+            android:background="@drawable/backoflog"
+            android:layout_marginTop="23dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:paddingLeft="18dp"
+            android:layout_centerHorizontal="true"/>
+        <CheckBox
+            android:id="@+id/rememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginpassword"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="19dp"
+            android:text="Remember Me"
+            android:textStyle="bold"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnlogin"
+            android:layout_width="343sp"
+            android:layout_height="57sp"
+            android:layout_below="@id/rememberme"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#14151B"
+            app:cornerRadius="8dp"
+            android:text="Log In"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/createaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnlogin"
+            android:text="Create New Account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#191F2E"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

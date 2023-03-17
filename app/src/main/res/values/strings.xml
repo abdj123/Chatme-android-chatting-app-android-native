@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UI Design 1</string>
+    <string name="menu_Open">Open navigation drawer</string>
+    <string name="close_menu">Close navigation drawer</string>
+</resources>
